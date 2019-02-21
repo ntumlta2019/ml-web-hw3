@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115414898-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115414898-1');
+  </script>
+</head>
+
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="author" content="jackie840129" >
+<meta charset="UTF-8">
+
+
+<title>Machine Learning (2018, Spring) - HW3</title>
+
+<xmp theme="united" style="display:none;">
+# Problem 4: Analyze the Model by Plotting the Saliency Map
+
+Problem Description:
+
+* Given an image and its corresponding class, we would like to rank the pixels of original image based on their influence on the distribution of final output
+
+* Use your trained CNN, get the gradient of input image and plot it, or you can use the other method mentioned in class to plot the saliency map
+
+
+## 範例
+* **[Note] 請不要直接使用助教的圖來當成作業交上來**
+* **[Note] 請不要使用這張範例圖**
+
+<img src="17.png" alt="Drawing" style="width: 200px;"/>
+
+#### Heatmap
+
+<center>原圖</center>| <center> Saliency Map</center> | <center>Mask掉heat小的部份</center>
+:-------------------------:|:-------------------------:|:------------------------:
+ <img src="17.png" alt="Drawing" style="width: 400px;"/>|<img src="17-cmap.png" alt="Drawing" style="width: 400px;"/>|<img src="17-psee.png" alt="Drawing" style="width: 400px;"/>
+
+## Reference
+
+→ [Deep Inside CNN: Visualizing Image Classification Models and Saliency Maps](https://arxiv.org/pdf/1312.6034.pdf)
+
+</xmp>
+<script src="strapdown.js"></script> 
+
+
+<footer>
+  <center><i class="fa fa-github"></i></a> Posted by: <a href="https://github.com/yangchris11/" target="_blank">Eric Lee</a>.</center>
+  <center><i class="fa fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2018@gmail.com </a>.</center>
+  <center><i class="fa fa-mortar-board"></i> Course website: <a href="http://163.28.17.129/mlcourse/#", target="_blank">Machine Learning (2018, Spring) @ National Taiwan University</a>.</center>
+  <center><i class="fa fa-cc"></i> Based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>. Web fonts from <a href="https://fonts.google.com" target="_blank">Google</a>.</center>
+</footer>
+
+</html>
