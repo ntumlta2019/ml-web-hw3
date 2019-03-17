@@ -17,11 +17,11 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta name="author" content="jackie840129" >
+<meta name="author" content="liangshuche" >
 <meta charset="UTF-8">
 
 
-<title>Machine Learning (2018, Spring) - HW3</title>
+<title>Machine Learning (2019, Spring) - HW3</title>
 
 <xmp theme="united" style="display:none;">
 
@@ -30,100 +30,49 @@
 # <p class="text-h">Homework 3 - Image Sentiment Classification</p>
 
 ### <p class="text-hh">Announcements</p>
+<!-- #### 3/28
+	
+* Sample code will be released at 03/28/2019 23:59:59 (GMT+8)
+* 手把手教學 release!
+* Deadline update! -->
+	
+#### 3/21
 
-#### 3/29
+* HW3 release! 
 
-* HW3 release!
-
-#### 4/19
-
-* 記得遲交要填遲交表單!
 
 <hr>
+
 
 ### <p class="text-hh">Links</p>
-* 作業投影片 <a href="https://docs.google.com/presentation/d/1h0qWtSrIw9KSwFJJ8GLwaTqLUTj6z1FanMRCVHCOBhE/edit#slide=id.g28fb825f54_0_939" target="_blank"><i class="fa fa-book"></i></a>
-* Kaggle 連結 <a href="https://www.kaggle.com/t/b98f465091ab439d90e00665b4250064" target="_blank"><i class="fa fa-trophy"></i></a>
-* Github Tutorial 投影片 <a href="https://docs.google.com/presentation/d/1IdhaxwbQ-O3Gz7kW57_VKQDVM27CNk0jtP8fNkhQduo/edit?usp=sharing" target="_blank"><i class="fa fa-book"></i></a>
-* Github Repo 表單 <a href="https://goo.gl/forms/4TTE24hLviFXaCqz2" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
-* Report 模板 <a href="https://docs.google.com/document/d/1SvPbF7OisOj_MGTNi8bmvg4bLxaN5Z4xJ5v3xDmjmFE/edit" target="_blank"><i class="fa fa-file-text"></i></a>
-* 小老師表單 <a href="https://goo.gl/forms/XpUU5mltlsc90ZW42" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
-* TA hours 4/12 ppt <a href="https://docs.google.com/presentation/d/1ldIMFtmpY25ptCZuBr2UVmZYx4RfgIBOhhesG4VNnEU/edit?usp=sharing" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
-* 遲交表單 <a href="https://goo.gl/forms/xZePqDmE7MrJv9AB3" target="_blank"><i class="fa fa-clock-o"></i></a>
-* Facebook Group <a href="https://www.facebook.com/groups/358842527926029/" target="_blank"><i class="fa fa-facebook-square"></i></a>
-
-
-<hr>
-### <p class="text-hh">Report Instruction</p>
-
-In this assignment, you will practice using Deep Learning libraries to experience the power of Neural Net.
-
-The requirements of this assignment are as follows:
-
-#### <a href="" target="_blank">P1:請說明你實作的 CNN model，其模型架構,訓練參數和準確率為何？(1%)</a>
-
-P1: Build Convolution Neural Network (1%)
-
-*[Accuracy]* Build CNN model, and tune it to the best formance as possible as you can.
-
-  Record your model structure and training procedure.
-
-#### <a href="" target="_blank">P2:請嘗試使用 data normalization, data augmentation,說明實行方法並且說明對準確率有什麼樣的影響?(1%)</a>
-
-P2: Try data normalization, data augmentation. Explain how you did and how it influence the performence.(1%)
-
-*[Accuracy]* Data normalization is trying to make the data normally distributed. For data augmentation, you cannot use other dataset. You can only augment the original dataset, including cropping,rotation,etc. 
-
-#### <a href="./p3.html" target="_blank">P3:觀察答錯的圖片中，哪些 class 彼此間容易用混?繪出 confusion matrix 分析(1%)</a>
-
-P3: Analyze the Model by Confusion Matrix (1%)
-
-*[Analysis]* Observe the prediction of your validation data( 10% ~ 20% of training data is OK ).
-
-Plot the prediction into confusion matrix and describe what you observed.
-
-#### <a href="./p4.html" target="_blank">P4:使用 CNN 的確有些好處，試繪出其 saliency maps，觀察模型在做 classification 時，是 focus 在圖片的哪些部份？(1%)</a>
-
-P4: Analyze the Model by Plotting the Saliency Map (1%)
-
-*[Analysis]* Plot the saliency map of original image to see which part is important when classifying.
-
-#### <a href="./p5.html" target="_blank">P5:承(4) 利用上課所提到的 gradient ascent 方法，觀察特定層的filter最容易被哪種圖片 activate。(1%)</a>
-
-P5: Analyze the Model by Visualizing Filters (1%)
-
-*[Analysis]* Use Gradient Ascent method mentioned in class to find the image that activates the selected filter the most and plot them.
-
-<hr>
-
-### <p class="text-hh">Lecture Slides</p>
-* Week3(3/15/2018): Deep Learning Introduction <a href="https://ceiba.ntu.edu.tw/course/c981c6/content/W3_DL_introduction.pdf">[pdf]</a>
-* Week4(3/22/2018): Tips for training deep learning <a href="https://ceiba.ntu.edu.tw/course/c981c6/content/W4c_DNN%20tip.pdf">[pdf]</a>
-* Week4(3/22/2018): Keras <a href="https://ceiba.ntu.edu.tw/course/c981c6/content/W4b_Keras.pdf">[pdf]</a>
-* Week4(3/22/2018): Back Propagation <a href="https://ceiba.ntu.edu.tw/course/c981c6/content/W4a_BP.pdf">[pdf]</a>
-* Week5(3/29/2018): CNN <a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/CNN.pdf">[pdf]</a>
-
+* 作業投影片 <a href="https://docs.google.com/presentation/d/1_UOEquMW4URIuTtrKGqwSPP4qtKIb7osT9ysTQ3Flmo/edit?usp=sharing" target="_blank"><i class="fa fa-book"></i></a>
+* Kaggle 連結 <a href="https://www.kaggle.com/c/ml2019spring-hw3" target="_blank"><i class="fa fa-trophy"></i></a>
+* Report 模板 <a href="https://goo.gl/DVZVob" target="_blank"><i class="fa fa-file-text"></i></a>
+* (有遲交的同學才需填寫)遲交表單 <a href="https://goo.gl/forms/1rkXM6YK3qq32P693" target="_blank"><i class="fa fa-clock-o"></i></a>
+<!-- * Sample code (Logictic regression) <a href="./LogisticRegression.html" target="_blank"><i class="fa fa-book"></i></a> -->
+<!-- * Sample code (Generative model) <a href="./ProbabilisticGenerativeModel.html" target="_blank"><i class="fa fa-book"></i></a> -->
+<!-- * 手把手教學投影片 <a href="#" target="_blank"><i class="fa fa-book"></i></a> -->
 <hr>
 
 
 ### <p class="text-hh">Deadlines</p>
-* Simple Bonus Deadline: 4/11/2018 23:59:59 (GMT+8)
-* Kaggle Deadline: 4/18/2018 23:59:59 (GMT+8)
-* Github Deadline: 4/19/2018 23:59:59 (GMT+8)
+* Early Baseline Deadline: 03/28/2019 23:59:59 (GMT+8) 
+* Kaggle Deadline: 04/11/2019 11:59:59 (GMT+8)
+* Github Deadline: 04/12/2019 23:59:59 (GMT+8)
 
 <hr>
 
 ### <p class="text-hh">Assignment Regulation</p>
 
-* ALL code must be written in python3.5+ 
-* For `hw3_train.sh` and `hw3_test.sh` :
-  * ALL python standard library is permitted (e.g. sys, csv, time)
-  * numpy == 1.13
-  * pandas == 0.21
-  * Tensorflow == 1.4.0
-  * Pytorch == 0.3.0
-  * Keras == 2.0.8
-  * PIL == 5.0.0
+* Only Python 3.6 available !!!!  
+* python standard library
+* numpy >=1.14
+* pandas >= 0.24.1
+* Pytorch == 1.0.1
+* Tensorflow == 1.12.0
+* Keras == 2.2.4
+<!-- * 不可以使用 xgboost, AdaBoostClassifier, ExtraTreesClassifier -->
+	
 <hr>
 
 ### <p class="text-hh">FAQ</p>
@@ -141,9 +90,8 @@ P5: Analyze the Model by Visualizing Filters (1%)
 
 
 <footer>
-  <center><i class="fa fa-github"></i></a> Posted by: <a href="https://github.com/yangchris11/" target="_blank">Eric Lee</a>.</center>
-  <center><i class="fa fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2018@gmail.com </a>.</center>
-  <center><i class="fa fa-mortar-board"></i> Course website: <a href="http://163.28.17.129/mlcourse/#", target="_blank">Machine Learning (2018, Spring) @ National Taiwan University</a>.</center>
+  <center><i class="fa fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2019@gmail.com </a>.</center>
+  <center><i class="fa fa-mortar-board"></i> Course website: <a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML19.html", target="_blank">Machine Learning (2019, Spring) @ National Taiwan University</a>.</center>
   <center><i class="fa fa-cc"></i> Based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>. Web fonts from <a href="https://fonts.google.com" target="_blank">Google</a>.</center>
 </footer>
 
